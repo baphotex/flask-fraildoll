@@ -66,8 +66,8 @@ function calculate() {
     var row2 = table.insertRow();
     row2.insertCell(0).innerHTML = "<b>Calories</b>";
     for (var day = 1; day <= 7; day++) {
-        let total = day * 5 * weight;
-        row2.insertCell(day).innerHTML = Math.round(total);
+        let total = Math.round(day * 5 * weight);
+        row2.insertCell(day).innerHTML = total;
     }
 
     // Append the table to the resultTable div
