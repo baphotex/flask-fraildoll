@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refeeding Calculator </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="https://neothemes.neocities.org/images/favicon.gif" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>Post Fast Calories</h1>
+
+        <div id="ageQuestion">
+            <p>Please enter your age:</p>
+            <input type="number" id="ageInput">
+            <button onclick="checkAge()">Next</button>
+        </div>
+
+        <div id="weightQuestion" class="hidden">
+            <p>Choose weight unit:</p>
+            <select id="unitSelect">
+                <option value="kg">Kilograms</option>
+                <option value="pounds">Pounds</option>
+            </select>
+            <p>Enter your weight:</p>
+            <input type="number" id="weightInput">
+            <button onclick="calculate()">Calculate</button>
+        </div>
+
+        <div id="resultTable" class="hidden"></div>
+
+        <script src="rfsCalculatorScript.js"></script>
+    </div>
+
+</body>
+</html>
