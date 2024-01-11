@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, render_template
 import os
 
 app = Flask(__name__)
@@ -6,7 +6,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"})
+    return render_template('index.html') 
+
+@app.route('/rfs-calculator')
+def rfs_calc():
+    return render_template('rfs-calculator.html') 
 
 
 if __name__ == '__main__':
