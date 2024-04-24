@@ -8,9 +8,9 @@ app = Flask(__name__)
 def index():
     return render_template('index.html') 
 
-@app.route('/rfs-calculator')
-def rfs_calc():
-    return render_template('rfs-calculator.html') 
+#@app.route('/rfs-calculator')
+#def rfs_calc():
+#    return render_template('rfs-calculator.html') 
 
 
 if __name__ == '__main__':
